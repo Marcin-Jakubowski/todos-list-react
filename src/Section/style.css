@@ -1,0 +1,31 @@
+.section {
+    min-height: 100px;
+    background-color: #fff;
+    max-width: 1000px;
+    margin: 10px auto;
+    box-shadow: 0 0 5px 2px #ddd;
+}
+
+.section__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    grid-gap: 10px;
+    border-bottom: 2px solid #eee;
+}
+
+@media (max-width: 767px) {
+    .section__container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.section__h2 {
+    font-weight: 700;
+    margin: 0;
+    padding: 20px;
+}
+
+.section__h2--border {
+    border-bottom: 2px solid #eee;
+}
