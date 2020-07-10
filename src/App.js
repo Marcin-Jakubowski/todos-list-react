@@ -18,14 +18,14 @@ function App() {
     <Container>
       <Header title="Lista zadań" />
       <Section
-      title="Dodaj nowe zadanie"
-      body={<Form />}
+        title="Dodaj nowe zadanie"
+        body={<Form />}
       />
 
       <Section
-      title="Lista zadań"
-      body={<Tasks tasks={tasks} hiding={hiding} />}
-      extraHeaderContent={<Buttons tasks={tasks} hiding={hiding} />}
+        title="Lista zadań"
+        body={<Tasks tasks={tasks} hiding={hiding} />}
+        extraHeaderContent={<Buttons tasks={tasks} hiding={hiding} />}
       />
     </Container>
   );
