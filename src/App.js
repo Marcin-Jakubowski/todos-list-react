@@ -7,8 +7,8 @@ import Header from "./Header";
 import Container from "./Container";
 
 const tasks = [
-  { id: 1, name: "a", done: false },
-  { id: 2, name: "b", done: true },
+  { id: 1, name: "Opanować nadawanie poprawnych nazw klas", done: false },
+  { id: 2, name: "Poprawić błędy w zadaniu", done: true },
 ];
 
 const hiding = false;
