@@ -20,12 +20,8 @@
     }
 }
 
-.section__h2 {
+.section__header {
     font-weight: 700;
     margin: 0;
     padding: 20px;
-}
-
-.section__h2--border {
-    border-bottom: 2px solid #eee;
 }

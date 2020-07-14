@@ -20,16 +20,17 @@
     height: 45px;
 }
 
-.form__button:hover {
-    background-color: hsl(180, 100%, 35%);
-    transform: scale(1.1);
-}
-
 @media (max-width: 767px) {
     .form {
         grid-template-columns: 1fr;
     }
 }
+
+.form__button:hover {
+    background-color: hsl(180, 100%, 35%);
+    transform: scale(1.1);
+}
+
 
 @media (max-width: 767px) {
     .form__button:hover {

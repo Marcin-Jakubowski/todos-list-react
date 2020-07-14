@@ -1,4 +1,4 @@
-.section__buttonContainer {
+.buttons__container {
     display: grid;
     grid-template-columns: auto auto;
     align-items: center;
@@ -8,7 +8,7 @@
 }
 
 @media (max-width: 767px) {
-    .section__buttonContainer {
+    .buttons__container {
         grid-template-columns: auto;
         justify-content: center;
         margin-bottom: 20px;
@@ -16,17 +16,21 @@
     }
 }
 
-.section__button {
+.buttons__button {
     color: teal;
     border: none;
     background-color: #fff;
     padding: 10px;
 }
 
-.section__button:hover {
+.buttons__button:hover {
     color: hsl(180, 100%, 35%);
 }
 
-.section__button:disabled {
+.buttons__button:disabled {
     color: #ccc;
+}
+
+.buttons__button--hidden {
+    display: none;
 }

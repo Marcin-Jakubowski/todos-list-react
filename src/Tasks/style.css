@@ -19,7 +19,7 @@
     text-decoration: line-through;
 }
 
-.tasksList__task--false {
+.tasksList__task--taskNotDone {
     text-decoration: none;
 }
 
@@ -28,7 +28,7 @@
     width: 40px;
     height: 40px;
     margin: 10px;
-    background-image: url("../Images/done.png");
+    background-image: url("../Tasks/done.png");
     background-size: cover;
     border: none;
 }
@@ -37,20 +37,16 @@
     background-color: hsl(120, 100%, 35%);
 }
 
-.tasksList__button--false {
+.tasksList__button--taskNotDone {
     background-image: none;
 }
 
 .tasksList__button--deleteButton {
     background-color: red;
-    background-image: url("../Images/delete.png");
+    background-image: url("../Tasks/delete.png");
     background-size: cover;
 }
 
 .tasksList__button--deleteButton:hover {
     background-color: hsl(0, 100%, 60%);
-}
-
-.tasksList--hidden {
-    display: none;
 }
