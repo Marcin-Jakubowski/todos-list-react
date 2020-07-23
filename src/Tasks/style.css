@@ -31,6 +31,7 @@
     background-image: url("../Tasks/done.png");
     background-size: cover;
     border: none;
+    transition: 0.25s;
 }
 
 .tasksList__button:hover {
