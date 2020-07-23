@@ -45,7 +45,7 @@ function App() {
       {
         name,
         done: false,
-        id: tasks.length ? tasks[tasks.length -1].id + 1 : 1,
+        id: tasks.length ? tasks[tasks.length - 1].id + 1 : 1,
       }
     ])
   };
@@ -61,19 +61,22 @@ function App() {
 
       <Section
         title="Lista zadań"
-        body={<Tasks
-          tasks={tasks}
-          hideDone={hideDone}
-          removeTask={removeTask}
-          toggleTaskDone={toggleTaskDone}
-        />}
+        body={
+          <Tasks
+            tasks={tasks}
+            hideDone={hideDone}
+            removeTask={removeTask}
+            toggleTaskDone={toggleTaskDone}
+          />
+        }
         extraHeaderContent={
           <Buttons
             tasks={tasks}
             hideDone={hideDone}
             toggleHideDone={toggleHideDone}
             setAllDone={setAllDone}
-          />}
+          />
+        }
       />
     </Container>
   );
