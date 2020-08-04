@@ -1,17 +1,13 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./style.css"
 
 const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone }) => {
-    useEffect(() => {
-        localStorage.setItem("tasks", JSON.stringify(tasks));
-    }, [tasks]);
-
     if (!tasks.length) {
         return null;
     }
 
     return (
-        < ul className="tasksList" >
+        <ul className="tasksList">
             {
                 tasks.map(({ name, id, done }) => (
                     <li
