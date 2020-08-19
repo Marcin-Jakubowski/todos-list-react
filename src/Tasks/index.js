@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.css"
+import { TasksList, Item, Content, Button } from "./styled";
 
 const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone }) => {
     if (!tasks.length) {
@@ -7,28 +7,29 @@ const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone }) => {
     }
 
     return (
-        <ul className="tasksList">
+        <TasksList>
             {
                 tasks.map(({ name, id, done }) => (
-                    <li
+                    <Item
                         key={id}
-                        className={`tasksList__item${hideDone && done ? " tasksList__item--hidden" : ""}`}>
-                        <button
-                            className={`tasksList__button
-                    ${done ? "" : " tasksList__button--taskNotDone"}`}
+                        hidden={done && hideDone}
+                    >
+                        <Button
+                            toggleDone
                             onClick={() => toggleTaskDone(id)}
+                            doneTask={done}
                         />
-                        <span className={`tasksList__task ${done ? "" : " tasksList__task--taskNotDone"}`}>
+                        <Content done= {done}>
                             {name}
-                        </span>
-                        <button
-                            className="tasksList__button tasksList__button--deleteButton"
+                        </Content>
+                        <Button
+                            remove
                             onClick={() => removeTask(id)}
                         />
-                    </li>
+                    </Item>
                 ))
             }
-        </ul >
+        </TasksList>
     )
 };
 
