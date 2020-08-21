@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Box, Header } from "./styled";
 
-
 const Section = ({ title, body, extraHeaderContent }) => (
   <Container>
     <Box>

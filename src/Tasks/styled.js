@@ -2,7 +2,6 @@ import styled, { css } from "styled-components";
 import removeImage from "./delete.png";
 import doneImage from "./done.png";
 
-
 export const TasksList = styled.ul`
     margin: 20px;
     padding: 0 0 20px;
@@ -18,7 +17,6 @@ export const Item = styled.li`
     display: none;
     `}
 `;
-
 
 export const Content = styled.span`
     margin: auto 0;

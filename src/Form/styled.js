@@ -7,7 +7,6 @@ export const FormItem = styled.form`
     grid-gap: 20px;
     align-items: center;
 
-
     @media (max-width: 767px) {
         grid-template-columns: 1fr;
     }
@@ -35,4 +34,3 @@ export const Button = styled.button`
         transform: scale(1.02);
     }
 `;
-

@@ -19,7 +19,7 @@ const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone }) => {
                             onClick={() => toggleTaskDone(id)}
                             doneTask={done}
                         />
-                        <Content done= {done}>
+                        <Content done={done}>
                             {name}
                         </Content>
                         <Button

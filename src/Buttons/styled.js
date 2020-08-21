@@ -7,7 +7,6 @@ export const Container = styled.div`
     justify-content: end;
     grid-gap: 10px;
     padding-right: 20px;
-
     
     @media (max-width: 767px) {
         grid-template-columns: auto;
