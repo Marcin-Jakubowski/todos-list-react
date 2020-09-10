@@ -30,11 +30,11 @@ const useTasks = () => {
         })));
     };
 
-    const addNewTask = (name) => {
+    const addNewTask = (content) => {
         setTasks(tasks => [
             ...tasks,
             {
-                name,
+                content,
                 done: false,
                 id: tasks.length ? tasks[tasks.length - 1].id + 1 : 1,
             }
