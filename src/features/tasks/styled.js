@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 
-export const Container = styled.div`
+export const ButtonContainer = styled.div`
     display: grid;
     grid-template-columns: auto auto;
     align-items: center;

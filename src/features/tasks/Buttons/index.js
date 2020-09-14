@@ -1,17 +1,14 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { Container, Button } from "./styled";
-import { selectTasks, toggleHideDone, setAllDone, fetchExampleTasks } from "../tasksSlice";
+import { Button, ButtonContainer } from "../styled";
+import { selectTasks, toggleHideDone, setAllDone } from "../tasksSlice";
 
 const Buttons = () => {
     const { tasks, hideDone } = useSelector(selectTasks);
     const dispatch = useDispatch();
     
     return (
-        <Container>
-            <Button onClick={() => dispatch(fetchExampleTasks())}>
-                Pobierz przykładowe zadania
-            </Button>
+        <ButtonContainer>
             {tasks.length > 0 && (
                 <>
                     <Button
@@ -29,7 +26,7 @@ const Buttons = () => {
                     </Button>
                 </>
             )}
-        </Container>
+        </ButtonContainer>
 
     )
 };
