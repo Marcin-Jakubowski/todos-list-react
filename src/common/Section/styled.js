@@ -25,3 +25,7 @@ export const Header = styled.h2`
     margin: 0;
     padding: 20px;
 `;
+
+export const BodyBox = styled.div`
+    padding: 20px;
+`;

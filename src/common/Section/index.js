@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Box, Header } from "./styled";
+import { Container, Box, Header, BodyBox } from "./styled";
 
 const Section = ({ title, body, extraHeaderContent }) => (
   <Container>
@@ -9,7 +9,9 @@ const Section = ({ title, body, extraHeaderContent }) => (
       </Header>
       {extraHeaderContent}
     </Box>
-    {body}
+    <BodyBox>
+      {body}
+    </BodyBox>
   </Container>
 );
 
