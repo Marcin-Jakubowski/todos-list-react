@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { Button, ButtonContainer } from "../styled";
-import { selectTasks, fetchExampleTasks } from "../tasksSlice";
+import { selectTasks, fetchExampleTasks } from "../../tasksSlice";
+import { Button, ButtonContainer } from "../../styled";
 
 const ExampleTasksButton = () => {
     const dispatch = useDispatch();
@@ -16,7 +16,7 @@ const ExampleTasksButton = () => {
                 {loadDone === false ? "Ładowanie..." : "Pobierz przykładowe zadania"}
             </Button>
         </ButtonContainer>
-    )
+    );
 };
 
 export default ExampleTasksButton;
