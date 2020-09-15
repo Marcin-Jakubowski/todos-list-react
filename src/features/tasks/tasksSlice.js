@@ -49,4 +49,18 @@ export const {
     toggleLoadDone,
 } = tasksSlice.actions;
 export const selectTasks = state => state.tasks;
+
+export const getTaskById = (state, taskId) =>
+    selectTasks(state).tasks.find(({ id }) => id === taskId);
+
+export const selectTasksByQuery = (state, query) => {
+    const tasks = selectTasks(state).tasks;
+    if (!query || query.trim() === "") {
+        return tasks;
+    }
+
+    return tasks.filter(({ content }) =>
+        content.toUpperCase().includes(query.trim().toUpperCase()));
+};
+
 export default tasksSlice.reducer;
