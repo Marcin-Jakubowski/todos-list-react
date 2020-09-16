@@ -1,7 +1,29 @@
-# Task list
+# TODO list
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is done and updated as part of programming learning
 
+## Description
+
+As part of this project, it is possible to:
+ - add and remove tasks,
+ - mark them as done and hide / show done,
+ - download sample tasks,
+ - search for tasks,
+ - check task details,
+ - go to the page about the author
+
+ ## Technologies and methodologies
+
+- HTML
+- CSS
+- JavaScript
+- JSX
+- Styled components
+- React
+- React redux
+- Redux saga
+- React router
+- Local storage
 
 ## Available Scripts
 
