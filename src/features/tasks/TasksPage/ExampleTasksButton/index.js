@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { selectTasks, fetchExampleTasks } from "../../tasksSlice";
-import { Button, ButtonContainer } from "../../styled";
+import { Button, ButtonContainer } from "../../Button";
 
 const ExampleTasksButton = () => {
     const dispatch = useDispatch();
