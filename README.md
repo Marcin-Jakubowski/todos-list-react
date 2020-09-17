@@ -2,6 +2,8 @@
 
 This project is done and updated as part of programming learning
 
+DEMO: https://marcin-jakubowski.github.io/todos-list-react/#/zadania
+
 ## Description
 
 As part of this project, it is possible to:
