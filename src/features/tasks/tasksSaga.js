@@ -6,12 +6,13 @@ import { saveTasksInLocalStorage } from "./tasksLocalStorage";
 function* fetchExampleTasksHandler() {
     try {
         yield put(toggleLoadDone());
-        yield delay(1000);
+        yield delay(500);
         const exampleTasks = yield call(getExampleTasks);
         yield put(setTasks(exampleTasks));
         yield put(toggleLoadDone());
     } catch (error) {
         yield call(alert, "Coś poszło nie tak");
+        yield put(toggleLoadDone());
     }
 }
 
