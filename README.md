@@ -9,6 +9,7 @@ DEMO: https://marcin-jakubowski.github.io/todos-list-react/#/zadania
 As part of this project, it is possible to:
  - add and remove tasks,
  - mark them as done and hide / show done,
+ - remove done tasks,
  - download sample tasks,
  - search for tasks,
  - check task details,
