@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 
 export const ButtonContainer = styled.div`
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
     align-items: center;
     justify-content: end;
     grid-gap: 10px;
