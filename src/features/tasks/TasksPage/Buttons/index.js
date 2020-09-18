@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { Button, ButtonContainer } from "../../Button";
-import { selectTasks, toggleHideDone, setAllDone } from "../../tasksSlice";
+import { selectTasks, toggleHideDone, setAllDone, removeDone } from "../../tasksSlice";
 
 const Buttons = () => {
     const { tasks, hideDone } = useSelector(selectTasks);
@@ -23,6 +23,12 @@ const Buttons = () => {
                         hidden={tasks.length === 0}
                     >
                         Ukończ wszystkie
+                    </Button>
+                    <Button
+                        onClick={() => dispatch(removeDone())}
+                        disabled={tasks.every(({ done }) => !done)}
+                    >
+                        Usuń ukończone
                     </Button>
                 </>
             )}

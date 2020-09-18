@@ -35,7 +35,10 @@ const tasksSlice = createSlice({
         toggleLoadDone: state => {
             state.loadDone = !state.loadDone;
         },
-    },
+        removeDone: state => {
+            state.tasks = state.tasks.filter(task => task.done === false);
+        },
+},
 });
 
 export const {
@@ -47,6 +50,7 @@ export const {
     fetchExampleTasks,
     setTasks,
     toggleLoadDone,
+    removeDone,
 } = tasksSlice.actions;
 export const selectTasks = state => state.tasks;
 
